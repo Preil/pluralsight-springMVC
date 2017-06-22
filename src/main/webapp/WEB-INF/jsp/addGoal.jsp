@@ -6,15 +6,15 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <title>Add Minutes</title>
+    <title>Add Goal</title>
 </head>
 <body>
-<h1>Add minutes exercised.</h1>
-Language: <a href="?language=en">Eng</a> | <a href="?language=es">Esp</a>
-<form:form commandName="exercise">
+<h1>Enter Goal</h1>
+
+<form:form commandName="goal">
     <table>
         <tr>
-            <td><spring:message code="goal.text"/></td>
+            <td>Enter minutes:</td>
             <td><form:input path="minutes"/></td>
         </tr>
         <tr>
@@ -24,6 +24,5 @@ Language: <a href="?language=en">Eng</a> | <a href="?language=es">Esp</a>
         </tr>
     </table>
 </form:form>
-<h1>Our goal for today is: ${goal.minutes} minutes</h1>
 </body>
 </html>

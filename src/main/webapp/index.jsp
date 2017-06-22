@@ -7,6 +7,7 @@
 <body>
 <h1>index.html</h1>
 
-<a href="/addMinutes.html">add minutes</a>
+<a href="/addMinutes.html">Add minutes</a>
+<a href="/addGoal.html">Add goal</a>
 </body>
 </html>
