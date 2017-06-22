@@ -14,7 +14,7 @@ public class AddMinutes {
     @RequestMapping(value = "/addMinutes")
     public String addMinutes(@ModelAttribute("exercise") Exercise exercise) {
         System.out.println("Exercise: " + exercise.getMinutes());
-        return "forward:addMoreMinutes.html";
+        return "redirect:addMoreMinutes.html";
     }
 
     @RequestMapping(value="/addMoreMinutes")
