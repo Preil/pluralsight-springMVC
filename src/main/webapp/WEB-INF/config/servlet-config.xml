@@ -19,7 +19,10 @@
     </bean>
      -->
 
+    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource"
+          p:basename="messages"/>
+
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
-          p:prefix="/WEB-INF/jsp/" p:suffix=".jsp" />
+          p:prefix="/WEB-INF/jsp/" p:suffix=".jsp"/>
 
 </beans>
