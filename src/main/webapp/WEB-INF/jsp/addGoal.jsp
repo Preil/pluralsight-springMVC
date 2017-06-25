@@ -28,7 +28,7 @@
     <table>
         <tr>
             <td>Enter minutes:</td>
-            <td><form:input path="minutes"/></td>
+            <td><form:input path="minutes" cssErrorClass="error"/></td>
             <td><form:errors path="minutes" cssClass="error"/></td>
         </tr>
         <tr>
