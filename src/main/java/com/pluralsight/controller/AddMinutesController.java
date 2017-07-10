@@ -16,11 +16,11 @@ import java.util.List;
  */
 
 @Controller
-public class AddMinutes {
+public class AddMinutesController {
     @RequestMapping(value = "/addMinutes")
     public String addMinutes(@ModelAttribute("exercise") Exercise exercise) {
         System.out.println("Exercise: " + exercise.getMinutes());
-        return "addMinutes";
+        return "addMinutesController";
     }
 
     @RequestMapping (value = "/activities", method = RequestMethod.GET)
