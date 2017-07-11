@@ -19,8 +19,8 @@ import java.util.List;
 public class AddMinutesController {
     @RequestMapping(value = "/addMinutes")
     public String addMinutes(@ModelAttribute("exercise") Exercise exercise) {
-        System.out.println("Exercise: " + exercise.getMinutes());
-        return "addMinutesController";
+        System.out.println("Exercise: " + exercise.getMinutes()+" exercise type: "+exercise.getActivity());
+        return "addMinutes";
     }
 
     @RequestMapping (value = "/activities", method = RequestMethod.GET)
