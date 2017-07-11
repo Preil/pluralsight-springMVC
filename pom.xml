@@ -90,8 +90,9 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-oxm</artifactId>
-            <version>4.3.8.RELEASE</version>
+            <version>3.0.6.RELEASE</version>
         </dependency>
+
 
     </dependencies>
 

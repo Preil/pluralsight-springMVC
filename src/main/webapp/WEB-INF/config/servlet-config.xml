@@ -51,13 +51,13 @@
                 <bean class="org.springframework.web.servlet.view.json.MappingJackson2JsonView">
                     <property name="contentType" value="application/json"/>
                 </bean>
-                <!--<bean class="org.springframework.web.servlet.view.xml.MarshallingView">
+                <bean class="org.springframework.web.servlet.view.xml.MarshallingView">
                     <constructor-arg>
                         <bean class="org.springframework.oxm.xstream.XStreamMarshaller">
                             <property name="autodetectAnnotations" value="true"/>
                         </bean>
                     </constructor-arg>
-                </bean>-->
+                </bean>
             </list>
         </property>
     </bean>
