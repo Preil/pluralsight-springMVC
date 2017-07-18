@@ -12,7 +12,7 @@
         </tr>
         <c:forEach items="${goals}" var="goal">
             <tr>
-                <td>${goal.id}</td>
+                <td>${goal.goalId}</td>
                 <td>${goal.minutes}</td>
                 <td>
                     <table>

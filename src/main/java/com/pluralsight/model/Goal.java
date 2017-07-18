@@ -40,4 +40,12 @@ public class Goal {
     public void setGoalId(Long goalId) {
         this.goalId = goalId;
     }
+
+    public List<Exercise> getExercises() {
+        return exercises;
+    }
+
+    public void setExercises(List<Exercise> exercises) {
+        this.exercises = exercises;
+    }
 }
