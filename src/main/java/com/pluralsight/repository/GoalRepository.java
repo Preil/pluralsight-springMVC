@@ -11,5 +11,5 @@ public interface GoalRepository {
 
     Goal save(Goal goal);
 
-    List<Goal> loadAllGoals();
+    List loadAllGoals();
 }

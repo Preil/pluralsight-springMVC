@@ -6,7 +6,6 @@ import org.springframework.stereotype.Repository;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -26,10 +25,10 @@ public class GoalRepositoryImpl implements GoalRepository {
     }
 
     @Override
-    public List<Goal> loadAllGoals() {
-        List<Goal> goals = new ArrayList<>();
+    public List loadAllGoals() {
+
         Query query = em.createQuery("select g from Goal g");
-        goals = query.getResultList();
-        return goals;
+        query.getResultList();
+        return query.getResultList();
     }
 }
