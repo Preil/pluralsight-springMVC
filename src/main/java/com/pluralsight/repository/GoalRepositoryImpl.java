@@ -6,7 +6,6 @@ import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 import java.util.List;
 
@@ -28,9 +27,9 @@ public class GoalRepositoryImpl implements GoalRepository {
 
     @Override
     public List loadAllGoals() {
-
-        Query query = em.createQuery("select g from Goal g");
-        query.getResultList();
+//        Query query = em.createQuery("select g from Goal g");
+//        query.getResultList();
+        TypedQuery<Goal> query = em.createNamedQuery(Goal.FIND_ALL_GOALS, Goal.class);
         return query.getResultList();
     }
 
