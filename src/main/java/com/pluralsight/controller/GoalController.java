@@ -59,7 +59,7 @@ public class GoalController {
 
     @RequestMapping(value = "getGoalReports", method = RequestMethod.GET)
     public String getGoalReports(Model model){
-        List<GoalReport> goalReports = goalService.findAllGoalReporst();
+        List<GoalReport> goalReports = goalService.findAllGoalReports();
         model.addAttribute("goalReports", goalReports);
         return "getGoalReports";
     }

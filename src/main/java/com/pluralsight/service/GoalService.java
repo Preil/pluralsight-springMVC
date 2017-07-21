@@ -14,5 +14,5 @@ public interface GoalService {
 
     List<Goal> findAllGoals();
 
-    List<GoalReport> findAllGoalReporst();
+    List<GoalReport> findAllGoalReports();
 }
